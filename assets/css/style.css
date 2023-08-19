@@ -8,13 +8,36 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+/* Commom */
 .clear{
     clear: both;
 }
 .text-white{
     color: #fff !important;
 }
-/* header */
+.row{
+    margin-left:-8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left:8px;
+    padding-right: 8px;
+}
+.col-third{
+    width:33.3333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center !important;
+}
+
+/* Header */
 #header{
     height: 46px;
     display: flex;
@@ -53,8 +76,7 @@ html{
 }
 
 .nav .subnav{
-    display: none;
-    
+    display: none;    
     min-width: 160px;
     position: absolute;
     background-color: #fff;
@@ -71,8 +93,7 @@ html{
     /* bỏ dấu chấm */
     list-style-type: none;
 }
-.search{
-   
+.search{   
     padding: 15px 22px;
 }
 .search:hover{
@@ -106,10 +127,13 @@ html{
 /* content */
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin: 0 120px;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 25px;
@@ -137,11 +161,7 @@ html{
 #content .member-list{
     margin-top:48px;
 }
-#content .member-item{
-    float: left;
-    width: calc(100%/3);
-    text-align:center;
-}
+
 #content .member-name{
     font-size:15px;
     
@@ -185,14 +205,11 @@ html{
     margin-top: -2px; 
 }
 .places-list{
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    
 }
-.place-item{
-    float: left;
-    width: 33.333%;
-    padding: 0 8px;
-}
+
 .place-img{
     width: 100%;
     display: block;
@@ -317,40 +334,41 @@ html{
     color: #2196f3
 }
 
-/* COntact section */
-.contact .address{
-    /* width: 100%;     */
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;  
+/* Contact section */
+.contact-content{
+    margin-top:48px;
 }
-.contact .contact-add p{
-    font-size: 18px;
+.contact-info{
+    font-size:18px;
     line-height: 1.4;
 }
-.contact .contact-add i{
-    padding-right: 10px;
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+
 }
-.contact .contact-form{
-    line-height: 1.4;
+.contact-form{
+    font-size:15px;
+    box-sizing: border-box;
 }
-.contact .form-control{
+.contact-form .form-control{
     /* width: 100%; */
+    padding: 6px;
     border: 1px solid #ccc;
-    font-size: 15px;   
-    padding: 10px; 
+
 }
-.contact .submit input{
-    padding: 10px;
-    background-color: #000;
+.send{
+    width: 60px;
+    padding: 6px;
+    text-align: center;
     color: #fff;
-    margin-top:5px;
-    margin-left: 350px;
+    background-color: #333;
+    float: right;
 }
 /* Map */
 .map-section img{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 /* footer */
 #footer{

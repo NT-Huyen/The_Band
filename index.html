@@ -46,15 +46,15 @@
                 <p class="section-sub-heading">We love music.</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="member-list">
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="/assets/images/bandmember.jpg" alt="Nam" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="/assets/images/bandmember.jpg" alt="Nam" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="/assets/images/bandmember.jpg" alt="Nam" class="member-img">
                     </div>
@@ -76,8 +76,8 @@
                     </ul>
 
                     <!-- places -->
-                    <div class="places-list ">
-                        <div class="place-item">
+                    <div class=" row places-list ">
+                        <div class="col col-third">
                             <img src="/assets/images/newyork.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -87,7 +87,7 @@
                             </div>
                             
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third">
                             <img src="/assets/images/paris.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
@@ -97,7 +97,7 @@
                             </div>
                             
                         </div>
-                        <div class="place-item">
+                        <div class=" col col-third">
                             <img src="/assets/images/sanfran.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
@@ -114,60 +114,68 @@
             </div>
 
             <!-- Begin: Contact section -->
-            <div class="contact" id="contact">
-                <div class="content-section">
-                    <h2 class="section-heading">CONTACT</h2>
-                    <p class="section-sub-heading">Fan? Drop a note!</p> 
-                    
-                    <div class="address">
-                        <div class="contact-add">
-                            <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
-                            <p><i class="fa-solid fa-phone"></i> Phone: +00151515</p>
-                            <p><i class="fa-solid fa-envelope"></i> Email: mail@gmail.com</p>
-                        </div>
+            <div class="content-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p> 
+                
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p> <i class="fa-solid fa-location-dot"></i> Chicago, US</p>
+                        <p> <i class="fa-solid fa-phone"></i> Phone: +00151515</p>
+                        <p> <i class="fa-solid fa-envelope"></i> Email: mail@gmail.com</p>
+                    </div>
 
-                        <div class="contact-form">
-                            <div class="text-form">
-                                <div class="text">
-                                    <input type="text" placeholder="Name" class="form-control">
-                                    <input type="email" placeholder="Email" class="form-control">
+                    <div class="col col-half contact-form">
+                        <form action="" >
+                            <div class="row">
+                                <div class="col ">
+                                    <input type="text" class=" form-control" placeholder="Name">
+                                    <input type="email"class=" form-control" placeholder="Email">
+                                    
                                 </div>
+                                <!-- <div class="col ">
+                                    <input type="text"class="form-control" placeholder="Name"
+                                </div>
+                                <div class="col ">
+                                    <input type="email"class="form-control" placeholder="Email"
+                                </div> -->
+                            </div>
 
-                                <div class="message">
-                                    <input type="text" placeholder="Message" class="form-control">
+                            <div class="">
+                                <div class="col-full">
+                                    <input type="text"class="form-control" placeholder="Message"
                                 </div>
                             </div>
 
-                            <div class="submit">
-                                <input type="submit" value="Submit">
-                            </div>
+                            <input type="text" value="SEND" class="send">
                             
-                        </div>                                              
-                    </div>                   
-                </div>
-            </div>
+                        </form>
 
-            <!-- End: Contact section -->
-            <div class="map-section">
-                <img src="/assets/images/map.jpg" alt="Map">
+                    </div>                                              
+                </div>                   
             </div>
+            
+            
         </div>
-
+        <!-- End: Contact section -->
+        <div class="map-section">
+            <img src="/assets/images/map.jpg" alt="Map">
+        </div>
          
-        <!-- footer -->
-        <div id="footer">
-            <div class="socials-list">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-pinterest"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>
-            <p class="copyright">Powered by <a href="">w3.css</a></p>
-        </div>
+        
     </div>
-
+    <!-- footer -->
+    <div id="footer">
+        <div class="socials-list">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="">w3.css</a></p>
+    </div>
 
     <!-- form modal -->
     <div class="modal js-modal">
